@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohammed A. Alhejaily | Flynas Digital Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --flynas: #00B7AC;
+      --flynas-dark: #004F4A;
+      --bg: #DFFFFA;
+      --text-main: #111827;
+      --text-muted: #4B5563;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--flynas);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px 22px 32px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+      text-align: center;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+
+    .brand-main {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: lowercase;
+      color: var(--flynas-dark);
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 14px auto 0;
+      border: 4px solid var(--flynas);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #E0FFFA, #ffffff);
+      color: var(--flynas-dark);
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .name {
+      margin-top: 16px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--flynas-dark);
+    }
+
+    .title {
+      margin-top: 4px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .dept {
+      margin-top: 2px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .links {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, border-color 0.08s ease-out, background 0.08s ease-out;
+    }
+
+    .btn-main {
+      background: var(--flynas);
+      color: #ffffff;
+      border-color: var(--flynas);
+      box-shadow: 0 6px 16px rgba(0, 183, 172, 0.45);
+    }
+
+    .btn-sec {
+      background: #ffffff;
+      color: var(--flynas);
+      border-color: var(--flynas);
+    }
+
+    .btn-sub {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px 18px 26px;
+        border-radius: 14px;
+      }
+
+      .avatar {
+        width: 110px;
+        height: 110px;
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="Digital business card for Mohammed A. Alhejaily">
+    <header class="brand">
+      <div class="brand-main">flynas</div>
+      <div class="brand-sub">infrastructure &amp; cloud</div>
+    </header>
+
+    <div class="avatar" aria-hidden="true">
+      MA
+    </div>
+
+    <section>
+      <h1 class="name">Mohammed A. Alhejaily</h1>
+      <p class="title">Infrastructure &amp; Cloud Director</p>
+      <p class="dept">Infrastructure &amp; Cloud · Flynas</p>
+    </section>
+
+    <nav class="links" aria-label="Contact links">
+      <!-- WhatsApp -->
+      <a class="btn btn-main"
+         href="https://wa.me/966500787222?text=Hello%20Mr.%20Mohammed"
+         target="_blank" rel="noopener">
+        WhatsApp
+        <span class="btn-sub">Tap to open chat</span>
+      </a>
+
+      <!-- Call -->
+      <a class="btn btn-sec"
+         href="tel:+966500787222">
+        Call
+        <span class="btn-sub">+966 50 078 7222</span>
+      </a>
+
+      <!-- Email -->
+      <a class="btn btn-sec"
+         href="mailto:Malhejaily@flynas.com?subject=Contact%20via%20digital%20card">
+        Email
+        <span class="btn-sub">Malhejaily@flynas.com</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="btn btn-sec"
+         href="https://www.linkedin.com/in/malhejaily/"
+         target="_blank" rel="noopener">
+        LinkedIn
+        <span class="btn-sub">View profile on LinkedIn</span>
+      </a>
+    </nav>
+
+    <footer class="footer">
+      Digital business card · Updated 2025
+    </footer>
+  </main>
+</body>
+</html>

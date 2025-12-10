@@ -63,19 +63,20 @@
       color: var(--text-muted);
     }
 
+    /* UPDATED AVATAR FOR PHOTO */
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       margin: 14px auto 0;
-      border: 4px solid var(--flynas);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #E0FFFA, #ffffff);
-      color: var(--flynas-dark);
-      font-size: 40px;
-      font-weight: 700;
+      overflow: hidden;
+      border: 5px solid var(--flynas);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .name {
@@ -115,7 +116,10 @@
       text-align: center;
       cursor: pointer;
       border: 2px solid transparent;
-      transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, border-color 0.08s ease-out, background 0.08s ease-out;
+      transition: transform 0.08s ease-out, 
+                  box-shadow 0.08s ease-out, 
+                  border-color 0.08s ease-out, 
+                  background 0.08s ease-out;
     }
 
     .btn-main {
@@ -157,9 +161,8 @@
       }
 
       .avatar {
-        width: 110px;
-        height: 110px;
-        font-size: 34px;
+        width: 130px;
+        height: 130px;
       }
     }
   </style>
@@ -171,8 +174,9 @@
       <div class="brand-sub">infrastructure &amp; cloud</div>
     </header>
 
-    <div class="avatar" aria-hidden="true">
-      MA
+    <!-- UPDATED AVATAR WITH REAL PHOTO -->
+    <div class="avatar">
+      <img src="data:image/png;base64,uwzHg1HEpEojtHhZNyEuetqvKlpanp6enKqVigtjE4ujE/1DvRXuRtqTTf3dY2NjxEIwYM8z/u/AQAA//+optOQAAAABklEQVQDABaKFLmzoSEGAAAAAElFTkSuQmCC">
     </div>
 
     <section>
@@ -182,7 +186,6 @@
     </section>
 
     <nav class="links" aria-label="Contact links">
-      <!-- WhatsApp -->
       <a class="btn btn-main"
          href="https://wa.me/966500787222?text=Hello%20Mr.%20Mohammed"
          target="_blank" rel="noopener">
@@ -190,21 +193,18 @@
         <span class="btn-sub">Tap to open chat</span>
       </a>
 
-      <!-- Call -->
       <a class="btn btn-sec"
          href="tel:+966500787222">
         Call
         <span class="btn-sub">+966 50 078 7222</span>
       </a>
 
-      <!-- Email -->
       <a class="btn btn-sec"
          href="mailto:Malhejaily@flynas.com?subject=Contact%20via%20digital%20card">
         Email
         <span class="btn-sub">Malhejaily@flynas.com</span>
       </a>
 
-      <!-- LinkedIn -->
       <a class="btn btn-sec"
          href="https://www.linkedin.com/in/malhejaily/"
          target="_blank" rel="noopener">
